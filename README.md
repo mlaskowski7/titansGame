@@ -22,6 +22,7 @@ WORK IN PROGRESS.
 - **Node.js**
 - **Rust**
 - **PostgreSQL**
+- **Docker Desktop**
 
 1. Clone the parent repo
 ```
@@ -36,6 +37,10 @@ git submodule update
 
 2. Setup Backend
 ```
+## create and run docker container with postgres db
+docker pull postgres:latest
+dcoker run --name postgres-titansGame -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres POSTGRES_DB=titansGame-db -p 5432:5432 -d postgres
+
 cd server
 
 ## ensure that rustup is installed
