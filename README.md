@@ -1,8 +1,8 @@
 # TITANS GAME
 
 ## OVERVIEW
-Parent repository for Titans Game project, intagreates the frontend and backend repos as git submodules (client, server)
-I use rust for the backend and svelteKit framework for the frontend in order to increase efficiency by using lightweight framework, avoiding virtual DOM.
+Parent repository for Titans Game project, integrates the frontend and backend repos as git submodules (client, server) <br />
+I use rust for the backend and svelteKit framework for the frontend in order to increase efficiency by using lightweight framework, avoiding virtual DOM. <br />
 Project will be a web-based game, developed following TDD rules both on backend and frontend.
 WORK IN PROGRESS.
 
