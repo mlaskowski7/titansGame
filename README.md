@@ -21,7 +21,6 @@ WORK IN PROGRESS.
 ## Prerequisites
 - **Node.js**
 - **Rust**
-- **PostgreSQL**
 - **Docker Desktop**
 
 1. Clone the parent repo
@@ -38,8 +37,8 @@ git submodule update
 2. Setup Backend
 ```
 ## create and run docker container with postgres db
-docker pull postgres:latest
-docker run --name postgres-titansGame -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=titansGame-db -p 5432:5432 -d postgres
+docker pull mysql:latest
+docker run --name mysql_titansgame -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=titans_game -e MYSQL_PASSWORD=titans_game -e MYSQL_DATABASE=titans_game_db -p 3306:3306 -v mysql_data:/var/lib/mysql -d mysql:latest
 
 cd server
 
