@@ -3,19 +3,17 @@
 ## OVERVIEW
 Parent repository for Titans Game project, integrates the frontend and backend repos as git submodules (client, server) <br />
 I use rust for the backend and svelteKit framework for the frontend in order to increase efficiency by using lightweight framework, avoiding virtual DOM. <br />
-Project will be a web-based game, developed following TDD rules both on backend and frontend.
 WORK IN PROGRESS.
 
 ## TECH STACK
 ### Client
 - **Programming Language:** TypeScript
 - **Framework:** SvelteKit
-- **Testing:** Vitest, Playwright, Svelte Testing Library
+- **Styling:** TailwindCSS
 
 ### Server
 - **Programming Language:** Rust
 - **Framework:** Actix Web
-- **Testing:** Rust's built-in testing framework
 
 ## GETTING STARTED
 ## Prerequisites
@@ -45,9 +43,6 @@ cd server
 ## ensure that rustup is installed
 rustup -v
 
-## ensure all tests pass
-cargo test
-
 ## start the server
 cargo run
 
@@ -60,10 +55,6 @@ cd client
 
 ## install dependencies
 npm install
-
-## ensure all tests pass
-npm run test:unit
-npm run test:e2e
 
 ## run the dev server
 npm run dev
