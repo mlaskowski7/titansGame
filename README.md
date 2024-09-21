@@ -13,7 +13,7 @@ WORK IN PROGRESS.
 
 ### Server
 - **Programming Language:** Rust
-- **Framework:** Actix Web
+- **Dependencies** Actix Web, sqlx, serde, bcrypt, jsonwebtoken, chrono
 
 ## GETTING STARTED
 ## Prerequisites
@@ -35,8 +35,8 @@ git submodule update
 2. Setup Backend
 ```
 ## create and run docker container with postgres db
-docker pull mysql:latest
-docker run --name mysql_titansgame -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=titans_game -e MYSQL_PASSWORD=titans_game -e MYSQL_DATABASE=titans_game_db -p 3306:3306 -v mysql_data:/var/lib/mysql -d mysql:latest
+sudo docker pull mysql:latest
+sudo docker run --name mysql_titansgame -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=titans_game -e MYSQL_PASSWORD=titans_game -e MYSQL_DATABASE=titans_game_db -p 3306:3306 -v mysql_data:/var/lib/mysql -d mysql:latest
 
 cd server
 
