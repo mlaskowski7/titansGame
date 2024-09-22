@@ -46,7 +46,7 @@ rustup -v
 ## start the server
 cargo run
 
-## server is available on port 8000
+## server is available on port 8080
 ```
 
 3. Setup Frontend
