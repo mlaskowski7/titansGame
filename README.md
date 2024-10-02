@@ -43,6 +43,10 @@ cd server
 ## ensure that rustup is installed
 rustup -v
 
+## create .env file and paste those lines there:
+DATABASE_URL=mysql://titans_game:titans_game@localhost:3306/titans_game_db
+JWT_SECRET=sbadhsabdhbsahdbasndndjsabd
+
 ## start the server
 cargo run
 
